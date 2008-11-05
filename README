@@ -1,0 +1,11 @@
+Installation
+============
+
+1. Backup your .vimrc file and .vim directory
+
+2. In your home, do:
+
+	git clone git@github.com:goomerko/vim-rails.config.git .vim
+	ln -s .vim/vimrc .vimrc
+
+3. Enjoy!
