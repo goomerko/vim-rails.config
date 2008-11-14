@@ -9,4 +9,8 @@ Installation
 	
 	ln -s .vim/vimrc .vimrc
 
+        And if you like gvim:
+
+	ln -s .vim/gvimrc .gvimrc
+
 3. Enjoy!
