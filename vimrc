@@ -51,4 +51,5 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 set cursorline
 
 set number
+set hlsearch
 
