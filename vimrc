@@ -50,4 +50,5 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 "Línea de cursor
 set cursorline
 
+set number
 
