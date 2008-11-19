@@ -50,8 +50,12 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 "Línea de cursor
 set cursorline
 
-set number
+"set number
 set hlsearch
-if filereadable("~/.vim/vimrc.local")
-	source ~/.vim/vimrc.local
+
+
+"Load custom configuration
+let my_home = expand("$HOME/")
+if filereadable(my_home . '.vimrc.local')
+	source ~/.vimrc.local
 endif

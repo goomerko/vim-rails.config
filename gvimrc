@@ -5,6 +5,8 @@ set lines=40
 set columns=120
 :winpos 150 0 
 
-if filereadable("~/.vim/gvimrc.local")
-	source "~/.vim/gvimrc.local"
+" Load custom configuration
+let my_home = expand("$HOME/")
+if filereadable(my_home . '.gvimrc.local')
+	source ~/.gvimrc.local
 endif
