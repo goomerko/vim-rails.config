@@ -6,5 +6,5 @@ set columns=120
 :winpos 150 0 
 
 if filereadable("~/.vim/gvimrc.local")
-	source ~/.vim/gvimrc.local
+	source "~/.vim/gvimrc.local"
 endif
