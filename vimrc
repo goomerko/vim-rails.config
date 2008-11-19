@@ -52,4 +52,6 @@ set cursorline
 
 set number
 set hlsearch
-
+if filereadable("~/.vim/vimrc.local")
+	source ~/.vim/vimrc.local
+endif

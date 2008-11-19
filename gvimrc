@@ -1,4 +1,3 @@
-set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 10   
 set guioptions-=T
 
 "Size and Window Position
