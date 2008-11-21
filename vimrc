@@ -23,6 +23,10 @@ let g:rails_default_file='config/database.yml'
 syntax enable
 set smartindent
 
+set ts=2  " Tabs are 2 spaces
+set bs=2  " Backspace over everything in insert mode
+set shiftwidth=2  " Tabs under smart indent
+
 " NERDTree
 "
 let NERDTreeShowBookmarks  = 1
@@ -32,7 +36,12 @@ map <leader>n :NERDTreeToggle <cr>
 
 
 " FuzzyFinderTextMate
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
 map <leader>t :FuzzyFinderTextMate <cr>
+"Search in Opened Buffers
+map <leader>b :FuzzyFinderBuffer<CR> 
+
 
 " TagList
 map <leader>tl :Tlist <cr>
@@ -50,7 +59,7 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 "Línea de cursor
 set cursorline
 
-"set number
+set number
 set hlsearch
 
 
