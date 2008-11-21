@@ -62,6 +62,10 @@ set cursorline
 set number
 set hlsearch
 
+"Adding #{} to AutoClose Plugin and activating it for String interpolation
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
+let g:AutoCloseProtectedRegions = ["Character"] 
+
 
 "Load custom configuration
 let my_home = expand("$HOME/")
