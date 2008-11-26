@@ -23,6 +23,10 @@ let g:rails_default_file='config/database.yml'
 syntax enable
 set smartindent
 
+set ts=2  " Tabs are 2 spaces
+set bs=2  " Backspace over everything in insert mode
+set shiftwidth=2  " Tabs under smart indent
+
 " NERDTree
 "
 let NERDTreeShowBookmarks  = 1
@@ -31,8 +35,16 @@ let NERDTreeWinPos = "left"
 map <leader>n :NERDTreeToggle <cr>
 
 " FuzzyFinderTextMate
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
 map <leader>t :FuzzyFinderTextMate <cr>
+<<<<<<< HEAD:vimrc
 map <leader>b :FuzzyFinderBuffer <cr>
+=======
+"Search in Opened Buffers
+map <leader>b :FuzzyFinderBuffer<CR> 
+
+>>>>>>> 4888b9532151f312dd63c241d5dde7a6b9b77071:vimrc
 
 " TagList
 map <leader>tl :TlistToggle <cr>
@@ -51,8 +63,12 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 "Línea de cursor
 set cursorline
 
-"set number
+set number
 set hlsearch
+
+"Adding #{} to AutoClose Plugin and activating it for String interpolation
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
+let g:AutoCloseProtectedRegions = ["Character"] 
 
 
 "Load custom configuration
