@@ -30,12 +30,13 @@ let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 map <leader>n :NERDTreeToggle <cr>
 
-
 " FuzzyFinderTextMate
 map <leader>t :FuzzyFinderTextMate <cr>
+map <leader>b :FuzzyFinderBuffer <cr>
 
 " TagList
-map <leader>tl :Tlist <cr>
+map <leader>tl :TlistToggle <cr>
+let Tlist_Use_Right_Window = 1
 
 " Specky
 let g:speckyQuoteSwitcherKey = "<C-S>'"
