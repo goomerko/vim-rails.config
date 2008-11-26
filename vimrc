@@ -38,13 +38,8 @@ map <leader>n :NERDTreeToggle <cr>
 let g:fuzzy_ignore = "*.log"
 let g:fuzzy_matching_limit = 70
 map <leader>t :FuzzyFinderTextMate <cr>
-<<<<<<< HEAD:vimrc
-map <leader>b :FuzzyFinderBuffer <cr>
-=======
 "Search in Opened Buffers
 map <leader>b :FuzzyFinderBuffer<CR> 
-
->>>>>>> 4888b9532151f312dd63c241d5dde7a6b9b77071:vimrc
 
 " TagList
 map <leader>tl :TlistToggle <cr>
