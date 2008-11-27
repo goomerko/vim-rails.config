@@ -73,3 +73,7 @@ let my_home = expand("$HOME/")
 if filereadable(my_home . '.vimrc.local')
 	source ~/.vimrc.local
 endif
+
+" Quick jumping between splits
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_"
