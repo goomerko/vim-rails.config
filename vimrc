@@ -36,7 +36,6 @@ let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 map <leader>n :NERDTreeToggle <cr>
 
-
 " FuzzyFinderTextMate
 let g:fuzzy_ignore = "*.log"
 let g:fuzzy_matching_limit = 70
@@ -44,9 +43,9 @@ map <leader>t :FuzzyFinderTextMate <cr>
 "Search in Opened Buffers
 map <leader>b :FuzzyFinderBuffer<CR> 
 
-
 " TagList
-map <leader>tl :Tlist <cr>
+map <leader>tl :TlistToggle <cr>
+let Tlist_Use_Right_Window = 1
 
 " Specky
 let g:speckyQuoteSwitcherKey = "<C-S>'"
