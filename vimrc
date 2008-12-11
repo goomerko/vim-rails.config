@@ -81,3 +81,7 @@ map <C-K> <C-W>k<C-W>_
 " Refresh FuzzyFinder
 map <F5> :ruby @finder = nil<cr>
 
+" Autoindentación
+if has("autocmd")
+  filetype indent on
+endif
