@@ -6,6 +6,9 @@ set nocompatible  " We don't want vi compatibility.
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
  
+" Ignore extension files
+set wildignore=*.dll,*.o,*.obj,*.bak,*.pyc,*.swp " ignore these"
+
 " Minibuffer Explorer Settings
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
